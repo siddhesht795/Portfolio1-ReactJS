@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Merriweather&family=Montserrat&family=Nabla&family=Oswald:wght@500&display=swap');
+
+/*CONTAINER 1 - I create playful experiences*/
+
+.container1 {
+	display: grid;
+	grid-template-columns: 65% 35%;
+    background-color: black;
+}
+
+.content1 {
+	grid-column-start: 1;
+	align-self: center;
+	font-size: 5vw;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-family: 'Merriweather', serif;
+}
+
+.content1:hover {
+	cursor: default;
+}
+
+.playful {
+	background-image: url(https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3JmdWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+	background-size: cover;
+	background-position: center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.image-2 {
+	display: flex;
+}
+
+.image-2-pic {
+	padding: 11% 0%;
+	width: 70%;
+	align-self: center;
+}
+
+/*CONTAINER 2 - Siddesh Todi/Student*/
+
+.container2 {
+	display: flex;
+	font-family: monospace;
+	font-size: 2vw;
+	padding-left: 9%;
+    background-color: black;
+	/* text-shadow: 0px 0px 7px #5bbba7; */
+	animation: nameShadow 2s forwards ease infinite;
+}
+
+@keyframes nameShadow {
+	0% {text-shadow: 0 0 10px #a9bca8;}
+	25% {text-shadow: 0 0 10px #b777a9;}
+	50% {text-shadow: 0 0 10px yellow;}
+	75% {text-shadow: 0 0 10px #5bbba7;}
+	100% {text-shadow: 0 0 10px #a9bca8;}
+}
+
+/*Project with down sign icon*/
+
+.container3 {
+	/* width: 100vw; */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+    background-color: black;
+}
+
+.proj {
+	display: flex;
+	font-size: 1.8rem;
+	justify-content: center;
+}
+
+.dwn {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 2vw;
+}
+
+.dwn img{
+	width: 2.5vw;
+	position: relative;
+	top: -1vh;
+	transition: transform 0.3s ease-in-out;
+}
+
+.dwn img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+@media(max-width: 600px){
+    /*MQ CONTAINER 1 - I create playful experiences*/
+
+	.container1 {
+		display: grid;
+		grid-template-rows: 65% 35%;
+		grid-template-columns: 1fr;
+	}
+
+	.content1 {
+		grid-row-start: 2;
+		font-size: 7.5vw;
+		/* display: flex; */
+		text-align: center;
+		font-family: 'Merriweather', serif;
+	}
+
+	.content1:hover {
+		cursor: default;
+	}
+
+	.playful {
+		background-image: url(https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3JmdWwlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+		background-size: cover;
+		background-position: center;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+
+	.image-2 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.image-2-pic {
+		padding: 10% 0%;
+		width: 60vw;
+		align-self: center;
+	}
+
+	/*CONTAINER 2 - Siddesh Todi/Student*/
+
+	.container2 {
+		display: flex;
+		font-size: 5.4vw;
+		justify-content: center;
+		padding-left: 0%;
+	}
+
+	/*Project with down sign icon*/
+
+	.container3 {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.proj {
+		display: flex;
+		font-size: 4.5vw;
+		justify-content: center;
+	}
+
+	.dwn {
+		display: flex;
+		justify-content: center;
+		/*margin-left: 50%;*/
+	}
+
+	.dwn img{
+		width: 6.9vw;
+		position: relative;
+		top: -2vh;
+	}
+}

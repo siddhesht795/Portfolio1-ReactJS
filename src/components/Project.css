@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Oswald:wght@300&display=swap');
+
+.project {
+	width: 70vw;
+	margin: auto;
+	border-radius: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 7%;
+    background-color: black;
+	filter: brightness(0.75);
+}
+
+.projImage {
+	width: 30vw;
+	margin: 2%;
+	border-radius: 40px;
+	filter: brightness(0.5);
+	transition: filter 0.1s ease-in-out;
+}
+
+.project:hover .projImage, .project:hover {
+	filter: brightness(1);
+}
+
+.projDetails {
+	text-align: center;
+	position: relative;
+	left: -6%;
+}
+
+.title {
+	text-decoration: none;
+	font-size: 2.8vw;
+	position: relative;
+	left: 0%;
+	top: 5.5%;
+    font-family: 'Inconsolata', monospace;
+	transition: text-shadow 0.2s 0s ease-in-out;
+}
+
+.title:hover {
+	text-shadow: 0 0 25px white;
+}
+
+.techUsed {
+    display: flex;
+	width: 80%;
+	margin-top: 5%;
+	justify-content:space-evenly;
+	text-align: center;
+	position: relative;
+	left: 10%;
+}
+
+.techUsed p{
+    font-size: 1.05vw;
+    padding: 2% 4%;
+    font-family: 'Oswald', sans-serif;
+    border-top: 1px solid ;
+	border-bottom: 1px solid ;
+    border-radius: 5px;
+	filter: brightness(0.7);
+	transition: transform 0.25s ease-in-out, filter 0.15s ease-in-out;
+}
+
+.techUsed p:hover {
+	transform: scale(1.1);
+	filter: brightness(100%);
+}
+
+.description {
+    margin-top: -2%;
+	font-size: 1.2vw;
+}
+
+.viewCode {
+	margin-top: 5%;
+}
+
+.viewCode a {
+	padding: 2% 2%;
+	text-decoration: none;
+	font-size: 1.2vw;
+	border: 2px solid black;
+	filter: brightness(1.5);
+}

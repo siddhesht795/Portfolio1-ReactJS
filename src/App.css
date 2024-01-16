@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Merriweather&family=Montserrat&family=Nabla&family=Oswald:wght@500&display=swap');
+
+body {
+	margin: 0px;
+	background-color: black;
+	color: white;
+	overflow-x: hidden;
+}
+
+#myProj {
+	padding: 4%;
+	text-align: center;
+	font-size: 2.8vw;
+	background-color: black;
+	margin-top: 0;
+	margin-bottom: 0;
+}

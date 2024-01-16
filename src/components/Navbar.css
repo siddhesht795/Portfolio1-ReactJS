@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Merriweather&family=Montserrat&family=Nabla&family=Oswald:wght@500&display=swap');
+
+.navbar {
+	/*background-color: white;*/
+	display: flex;
+	color: white;
+	height: 16vh;
+	justify-content: space-around;
+    background-color: black;
+}
+
+.logo {
+	font-family: 'Nabla', cursive;
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 2.8rem;
+	font-weight: bold;
+	align-self: center;
+	transition: transform 0.5s ease-in-out 0s;
+}
+
+.logo:hover {
+	cursor: default;
+	transform: scale(1.2);
+}
+
+.empty {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.resume {
+	font-size: 2.1rem;
+	align-self: center;
+	font-family: 'Oswald', sans-serif;
+	transition: transform 0.3s ease-in-out;
+}
+
+.resume:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.resume a {
+	transition: text-shadow 0.2s ease-in-out;
+}
+
+.resume a:hover {
+	text-shadow: 2px 2px 20px #9dff9f;
+}
+
+.gh {
+	align-self: center;
+}
+
+.gh a img{
+	border-radius: 50%;
+	transition: box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.gh a img:hover {
+	box-shadow: 2px 2px 20px #ffeb6e;
+	transform: scale(1.1);
+}
+
+.lin {
+	padding-right: 6vw;
+	align-self: center;
+}
+
+.lin a img{
+	transition: box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.lin a img:hover {
+	box-shadow: 2px 2px 20px #a5e9ff;
+	transform: scale(1.1);
+}
+
+@media(max-width: 1240px){
+	.empty{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media(max-width: 600px){
+    /*MQ NAVBAR*/
+
+	.navbar {
+		/*background-color: white;*/
+		display: flex;
+		color: white;
+		height: 14vh;
+		justify-content: space-around;
+	}
+
+	.logo {
+		font-family: 'Nabla', cursive;
+		padding-right: 5%;
+		padding-left: 5%;
+		font-size: 8vw;
+		font-weight: bold;
+		align-self: center;
+		transition: font-size 0.6s ease-in-out 0s;
+	}
+
+	.logo:hover {
+		cursor: default;
+		font-size: 9vw;
+	}
+
+	.empty {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.resume {
+		font-size: 5vw;
+		align-self: center;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	.resume:hover {
+		cursor: pointer;
+	}
+
+	.gh{
+		align-self: center;
+	}
+	
+	.gh img{
+		align-self: center;
+		width: 70%;
+	}
+
+	.lin img{
+		align-self: center;
+		width: 70%;
+	}
+
+	.lin {
+		padding-right: 3vw;
+		align-self: center;
+	}
+
+}
