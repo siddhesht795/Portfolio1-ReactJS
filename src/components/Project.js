@@ -50,7 +50,7 @@ export default function Project(props) {
                 <div className="viewCode">
 
                     <a href={props.dets.code} style = {
-                        {color: props.styles.textColor2}}>View Code</a>
+                        {color: props.styles.textColor2}}>View Code in github</a>
                 </div>
             </div>
         </div>
